@@ -1,7 +1,10 @@
 (ns recursion)
 
 (defn product [coll]
-  :-)
+  (if (empty? coll)
+    1
+    (reduce * coll)))
+
 
 (defn singleton? [coll]
   :-)
